@@ -2,8 +2,9 @@
 
 Search job listings from StepStone, TotalJobs and related job boards via a developer-friendly API.
 
-Powered by the Apify actor:
-https://apify.com/blackfalcondata/stepstone-jobs-feed
+Available on:
+- **Apify:** https://apify.com/blackfalcondata/stepstone-jobs-feed
+- **RapidAPI:** https://rapidapi.com/black-falcon-data-black-falcon-data-default/api/stepstone-jobs
 
 ## Example request
 
@@ -12,15 +13,16 @@ Run the actor via the Apify API:
 POST https://api.apify.com/v2/acts/blackfalcondata~stepstone-jobs-feed/runs
 
 Example input:
-
+```json
 {
   "query": "data engineer",
   "geo": "DE",
   "maxResults": 10
 }
+```
 
 ## Example response
-
+```json
 {
   "count": 10,
   "results": [
@@ -32,6 +34,7 @@ Example input:
     }
   ]
 }
+```
 
 ## Supported portals
 
@@ -48,9 +51,13 @@ Example input:
 - caterer.com
 - pnet.co.za
 - jobs.ie
+- and 5 more UK vertical portals
 
-## API
+## Documentation
 
-Full documentation and usage examples:
+- **Apify actor:** https://apify.com/blackfalcondata/stepstone-jobs-feed
+- **RapidAPI:** https://rapidapi.com/black-falcon-data-black-falcon-data-default/api/stepstone-jobs
 
-https://apify.com/blackfalcondata/stepstone-jobs-feed
+## Related
+
+- [Company Jobs Tracker](https://github.com/BlackFalconData/company-jobs-tracker-api) — track new and removed job listings per company with change detection
